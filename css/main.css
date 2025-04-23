@@ -1,0 +1,148 @@
+:root {
+  --font-main: 'Roboto', sans-serif;
+  --main-color: #01036e;
+  --orange: #f5a623;
+  --rem-3: 3rem;
+  --secondary-color: #d4e5ff;
+  --white-color: white;
+}
+
+body {
+  font-family: var(--font-main);
+  width: 100%;
+}
+
+.custom-navbar {
+  background: var(--main-color) !important;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 12vh;
+}
+
+.navbar-brand a {
+  align-items: center;
+  color: var(--white-color);
+  display: flex;
+}
+
+.brand-txt {
+  margin-left: 0.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-list {
+  color: var(--white-color);
+  margin-right: 5rem;
+}
+
+.navbar-list:hover {
+  color: var(--orange);
+}
+
+.back-top-btn {
+  background: var(--main-color);
+  border-radius: 50%;
+  border: none;
+  bottom: 2rem;
+  color: var(--white-color);
+  cursor: pointer;
+  display: none;
+  font-size: 1.7rem;
+  height: 4rem;
+  position: fixed;
+  right: 1rem;
+  width: 4rem;
+  z-index: 99;
+}
+
+.main-container {
+  background-color: var(--secondary-color);
+  padding: 5rem var(--rem-3);
+}
+
+.title {
+  color: var(--main-color);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.txt {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.secondary-title {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: var(--rem-3) var(--rem-3);
+}
+
+.publications-list {
+  padding: 0 var(--rem-3) 0 var(--rem-3);
+}
+
+.publications {
+  margin: 0rem 3.5% 1rem 0;
+}
+
+.publications a img {
+  border-radius: 10px;
+  transition: border-radius 0.5s ease;
+}
+
+.publications a:hover img {
+  border-radius: 0px;
+}
+
+.title-publication {
+  color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5rem auto;
+}
+
+.line {
+  background: var(--secondary-color);
+  border: none;
+  height: 3px;
+  margin: var(--rem-3) var(--rem-3) 0 var(--rem-3);
+}
+
+.category-list {
+  margin-left: var(--rem-3);
+}
+
+.category-list li {
+  font-size: 1.3rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.main-footer {
+  background: var(--main-color);
+  height: 5vh;
+  margin-top: var(--rem-3);
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {}
+
+/* Tablets vertical */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Tablets horizontal y pequeños laptops */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* Laptops y escritorios */
+@media (min-width: 1025px) and (max-width: 1440px) {}
+
+/* Escritorios grandes */
+@media (min-width: 1441px) {}
