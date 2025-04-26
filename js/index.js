@@ -18,3 +18,45 @@ function goToTopPage() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+const list = [
+  {
+    img: "https://dummyimage.com/200x200/000/fff",
+    titulo: "Lorem Ipsum",
+    descripcion: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+  },
+  {
+    img: "https://dummyimage.com/200x200/000/fff",
+    titulo: "Lorem Ipsum",
+    descripcion: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+  },
+  {
+    img: "https://dummyimage.com/200x200/000/fff",
+    titulo: "Lorem Ipsum",
+    descripcion: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+  },
+  {
+    img: "https://dummyimage.com/200x200/000/fff",
+    titulo: "Lorem Ipsum",
+    descripcion: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+  },
+  {
+    img: "https://dummyimage.com/200x200/000/fff",
+    titulo: "Lorem Ipsum",
+    descripcion: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+  }
+];
+
+list.forEach(item => {
+  const list = `
+    <li class="publications">
+      <a href="#">
+        <img src="${item.img}" alt="" class="d-block mx-auto">
+        <p class="title-publication">${item.titulo}</p>
+        <p>${item.descripcion}</p>
+      </a>
+    </li>
+  `;
+
+  document.getElementById('publications-list').innerHTML += list;
+});

@@ -9,6 +9,7 @@
 
 body {
   font-family: var(--font-main);
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -86,10 +87,6 @@ a {
 
 .publications-list {
   padding: 0 var(--rem-3) 0 var(--rem-3);
-}
-
-.publications {
-  margin: 0rem 3.5% 1rem 0;
 }
 
 .publications a img {
