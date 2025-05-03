@@ -7,7 +7,7 @@
   --white-color: white;
 }
 
-body {
+html, body {
   font-family: var(--font-main);
   overflow-x: hidden;
   width: 100%;
